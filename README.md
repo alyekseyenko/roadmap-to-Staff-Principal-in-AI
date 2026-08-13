@@ -4,21 +4,21 @@
 
 | Module | Focus Area |
 | :--- | :--- |
-| 🧮 **[Module 0.0](#module-00---mathematical-foundations-and-classical-ml)** | Mathematical Foundations and Classical ML |
-| 📜 **[Module 0](#module-0---prehistory-until-2017-what-came-before-the-transformer)** | Prehistory (Until 2017) |
-| 🧠 **[Module 1](#module-1---the-transformer-architecture-and-attention-mechanisms-2017-2019)** | The Transformer & Attention Mechanisms |
-| ⚙️ **[Module 2](#module-2---scale-distributed-training-and-the-gpt-era-2019-2022)** | Scale, Distributed Training & GPT Era |
-| 💾 **[Module 3](#module-3---context-memory-and-attention-windows)** | Context, Memory & Attention Windows |
-| ⚡ **[Module 4](#module-4---inference-optimization-and-token-economics)** | Inference Optimization & Token Economics |
-| 🔍 **[Module 5](#module-5---rag-embeddings-and-external-knowledge)** | RAG, Embeddings & External Knowledge |
-| 🤖 **[Module 6](#module-6---agents-multi-agent-systems-and-protocols)** | Agents, Multi-Agent Systems & Protocols |
-| 🎯 **[Module 7](#module-7---fine-tuning-adaptation-and-alignment)** | Fine-Tuning, Adaptation & Alignment |
-| 📈 **[Module 8](#module-8---mlops-llmops-and-enterprise-ai-finops)** | MLOps, LLMOps & FinOps |
-| 🚀 **[Module 9](#module-9---the-state-of-the-art-in-august-2026)** | State of the Art (August 2026) |
-| 👁️ **[Module 10](#module-10---computer-vision-and-image-generation)** | Computer Vision & Image Generation |
-| 🛡️ **[Module 11](#module-11---safety-interpretability-and-classical-rl)** | Safety, Interpretability & Classical RL |
-| 🔧 **[Module 12](#module-12---tool-ecosystem-and-market-current-landscape-expanded-version)** | Tool Ecosystem & Market |
-| 🏢 **[Module 13](#module-13---advanced-architecture--technical-leadership)** | Advanced Architecture & Technical Leadership |
+|  **[Module 0.0](#module-00---mathematical-foundations-and-classical-ml)** | Mathematical Foundations and Classical ML |
+|  **[Module 0](#module-0---prehistory-until-2017-what-came-before-the-transformer)** | Prehistory (Until 2017) |
+|  **[Module 1](#module-1---the-transformer-architecture-and-attention-mechanisms-2017-2019)** | The Transformer & Attention Mechanisms |
+|  **[Module 2](#module-2---scale-distributed-training-and-the-gpt-era-2019-2022)** | Scale, Distributed Training & GPT Era |
+|  **[Module 3](#module-3---context-memory-and-attention-windows)** | Context, Memory & Attention Windows |
+|  **[Module 4](#module-4---inference-optimization-and-token-economics)** | Inference Optimization & Token Economics |
+|  **[Module 5](#module-5---rag-embeddings-and-external-knowledge)** | RAG, Embeddings & External Knowledge |
+|  **[Module 6](#module-6---agents-multi-agent-systems-and-protocols)** | Agents, Multi-Agent Systems & Protocols |
+|  **[Module 7](#module-7---fine-tuning-adaptation-and-alignment)** | Fine-Tuning, Adaptation & Alignment |
+|  **[Module 8](#module-8---mlops-llmops-and-enterprise-ai-finops)** | MLOps, LLMOps & FinOps |
+|  **[Module 9](#module-9---the-state-of-the-art-in-august-2026)** | State of the Art (August 2026) |
+|  **[Module 10](#module-10---computer-vision-and-image-generation)** | Computer Vision & Image Generation |
+|  **[Module 11](#module-11---safety-interpretability-and-classical-rl)** | Safety, Interpretability & Classical RL |
+|  **[Module 12](#module-12---tool-ecosystem-and-market-current-landscape-expanded-version)** | Tool Ecosystem & Market |
+|  **[Module 13](#module-13---advanced-architecture--technical-leadership)** | Advanced Architecture & Technical Leadership |
 
 ---
 
