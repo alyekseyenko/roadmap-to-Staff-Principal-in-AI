@@ -1,6 +1,27 @@
 # Index — From Zero to Staff/Principal in AI
 
+## 🗺️ Quick Navigation Menu
+
+| Module | Focus Area |
+| :--- | :--- |
+| 🧮 **[Module 0.0](#module-00---mathematical-foundations-and-classical-ml)** | Mathematical Foundations and Classical ML |
+| 📜 **[Module 0](#module-0---prehistory-until-2017-what-came-before-the-transformer)** | Prehistory (Until 2017) |
+| 🧠 **[Module 1](#module-1---the-transformer-architecture-and-attention-mechanisms-2017-2019)** | The Transformer & Attention Mechanisms |
+| ⚙️ **[Module 2](#module-2---scale-distributed-training-and-the-gpt-era-2019-2022)** | Scale, Distributed Training & GPT Era |
+| 💾 **[Module 3](#module-3---context-memory-and-attention-windows)** | Context, Memory & Attention Windows |
+| ⚡ **[Module 4](#module-4---inference-optimization-and-token-economics)** | Inference Optimization & Token Economics |
+| 🔍 **[Module 5](#module-5---rag-embeddings-and-external-knowledge)** | RAG, Embeddings & External Knowledge |
+| 🤖 **[Module 6](#module-6---agents-multi-agent-systems-and-protocols)** | Agents, Multi-Agent Systems & Protocols |
+| 🎯 **[Module 7](#module-7---fine-tuning-adaptation-and-alignment)** | Fine-Tuning, Adaptation & Alignment |
+| 📈 **[Module 8](#module-8---mlops-llmops-and-enterprise-ai-finops)** | MLOps, LLMOps & FinOps |
+| 🚀 **[Module 9](#module-9---the-state-of-the-art-in-august-2026)** | State of the Art (August 2026) |
+| 👁️ **[Module 10](#module-10---computer-vision-and-image-generation)** | Computer Vision & Image Generation |
+| 🛡️ **[Module 11](#module-11---safety-interpretability-and-classical-rl)** | Safety, Interpretability & Classical RL |
+| 🔧 **[Module 12](#module-12---tool-ecosystem-and-market-current-landscape-expanded-version)** | Tool Ecosystem & Market |
+| 🏢 **[Module 13](#module-13---advanced-architecture--technical-leadership)** | Advanced Architecture & Technical Leadership |
+
 ---
+
 
 ## Module 0.0 — Mathematical Foundations and Classical ML
 
@@ -1415,7 +1436,7 @@ graph LR
     subgraph KV_Cache_Node ["KV Cache Architecture"]
         Past["Past Tokens 1..t-1"] -->|Precomputed & Cached| KV_Cache["KV-Cache: Keys and Values of past tokens"]
         NewToken["New Token t"] -->|Compute| Query["Query: Q_t"]
-        KV_Cache & Query -->|Fast O(1) Attention Step| Out["New Token Output"]
+        KV_Cache & Query -->|"Fast O(1) Attention Step"| Out["New Token Output"]
     end
 ```
 
@@ -3456,7 +3477,7 @@ This enforces **local connectivity** (pixels only interact with immediate neighb
 graph LR
     subgraph CNN_Operations ["Convolution and Pooling Operations"]
         In["Input Grid (2D Pixel Matrix)"] -->|Kernel Sliding Dot Product| Conv["Feature Map (Edges / Textures)"]
-        Conv -->|Max Pooling (Choose maximums)| Pool["Downsampled Map (Reduced VRAM / Invariant)"]
+        Conv -->|"Max Pooling (Choose maximums)"| Pool["Downsampled Map (Reduced VRAM / Invariant)"]
     end
 ```
 
@@ -3579,7 +3600,7 @@ $$\min_G \max_D V(D,G) = \mathbb{E}_{\mathbf{x} \sim p_{\text{data}}}[\log D(\ma
 graph TD
     subgraph GAN_Adversarial_Loop ["GAN Minimax Competitive Loop"]
         Noise["Random Noise Vector z"] --> Generator["Generator G"]
-        Generator -->|Synthetic Image G(z)| Discriminator["Discriminator D"]
+        Generator -->|"Synthetic Image G(z)"| Discriminator["Discriminator D"]
         Real["Real Images x"] --> Discriminator
         Discriminator -->|Evaluate: Real vs Fake| Loss["Calculate Minimax Loss"]
         Loss -->|Update gradients back| Generator & Discriminator
@@ -3609,8 +3630,8 @@ Diffusion Models (specifically DDPM) operate on a two-stage thermodynamic proces
 ```mermaid
 graph LR
     subgraph Diffusion_Process ["Forward Noising and Reverse Denoising"]
-        X0["Clean Image x_0"] -->|Add Gaussian Noise (Forward)| XT["Raw Noise x_T"]
-        XT -->|Iterative Denoising (Reverse: U-Net)| X0
+        X0["Clean Image x_0"] -->|"Add Gaussian Noise (Forward)"| XT["Raw Noise x_T"]
+        XT -->|"Iterative Denoising (Reverse: U-Net)"| X0
     end
 ```
 
@@ -4046,7 +4067,7 @@ where only a tiny fraction of features $f_i$ are active, mapping individual acti
 ```mermaid
 graph LR
     subgraph SAE_Concept_Decomposition ["SAE Concept Decomposition"]
-        Poly["Polysemantic Activations: Neurons firing for unrelated inputs"] -->|Sparse Autoencoder (SAE)| Mono["Sparse Monosemantic Features: Clear conceptual directions (e.g., 'Paris')"]
+        Poly["Polysemantic Activations: Neurons firing for unrelated inputs"] -->|"Sparse Autoencoder (SAE)"| Mono["Sparse Monosemantic Features: Clear conceptual directions (e.g., 'Paris')"]
     end
 ```
 
