@@ -1,27 +1,190 @@
 # Index — From Zero to Staff/Principal in AI
 
-## 🗺️ Quick Navigation Menu
+<details>
+<summary><b>🗺️ Click to expand full interactive Table of Contents</b></summary>
 
-| Module | Focus Area |
-| :--- | :--- |
-|  **[Module 0.0](#module-00---mathematical-foundations-and-classical-ml)** | Mathematical Foundations and Classical ML |
-|  **[Module 0](#module-0---prehistory-until-2017-what-came-before-the-transformer)** | Prehistory (Until 2017) |
-|  **[Module 1](#module-1---the-transformer-architecture-and-attention-mechanisms-2017-2019)** | The Transformer & Attention Mechanisms |
-|  **[Module 2](#module-2---scale-distributed-training-and-the-gpt-era-2019-2022)** | Scale, Distributed Training & GPT Era |
-|  **[Module 3](#module-3---context-memory-and-attention-windows)** | Context, Memory & Attention Windows |
-|  **[Module 4](#module-4---inference-optimization-and-token-economics)** | Inference Optimization & Token Economics |
-|  **[Module 5](#module-5---rag-embeddings-and-external-knowledge)** | RAG, Embeddings & External Knowledge |
-|  **[Module 6](#module-6---agents-multi-agent-systems-and-protocols)** | Agents, Multi-Agent Systems & Protocols |
-|  **[Module 7](#module-7---fine-tuning-adaptation-and-alignment)** | Fine-Tuning, Adaptation & Alignment |
-|  **[Module 8](#module-8---mlops-llmops-and-enterprise-ai-finops)** | MLOps, LLMOps & FinOps |
-|  **[Module 9](#module-9---the-state-of-the-art-in-august-2026)** | State of the Art (August 2026) |
-|  **[Module 10](#module-10---computer-vision-and-image-generation)** | Computer Vision & Image Generation |
-|  **[Module 11](#module-11---safety-interpretability-and-classical-rl)** | Safety, Interpretability & Classical RL |
-|  **[Module 12](#module-12---tool-ecosystem-and-market-current-landscape-expanded-version)** | Tool Ecosystem & Market |
-|  **[Module 13](#module-13---advanced-architecture--technical-leadership)** | Advanced Architecture & Technical Leadership |
+### 📁 [Module 0.0 — Mathematical Foundations and Classical ML](#module-00-mathematical-foundations-and-classical-ml)
+  * 📄 [0.0.1 — Applied linear algebra — vectors, matrices, dot product](#001-applied-linear-algebra-vectors-matrices-dot-product)
+  * 📄 [0.0.2 — Functions, derivatives and gradient — the idea of "slope" that makes learning possible](#002-functions-derivatives-and-gradient-the-idea-of-slope-that-makes-learning-possible)
+  * 📄 [0.0.3 — Gradient descent — how a model adjusts weights step-by-step](#003-gradient-descent-how-a-model-adjusts-weights-step-by-step)
+  * 📄 [0.0.4 — Backpropagation in detail — how the error "travels backward" through the network](#004-backpropagation-in-detail-how-the-error-travels-backward-through-the-network)
+  * 📄 [0.0.5 — Loss functions — how the error is measured numerically](#005-loss-functions-how-the-error-is-measured-numerically)
+  * 📄 [0.0.6 — Classical ML pre-deep learning — regression, decision trees, SVM](#006-classical-ml-pre-deep-learning-regression-decision-trees-svm)
+  * 📄 [0.0.7 — Overfitting, underfitting e o bias-variance trade-off](#007-overfitting-underfitting-e-o-bias-variance-trade-off)
+  * 📄 [0.0.8 — Regularization — dropout, weight decay](#008-regularization-dropout-weight-decay)
+### 📁 [Module 0 — Prehistory (until 2017): what came before the Transformer](#module-0-prehistory-until-2017-what-came-before-the-transformer)
+  * 📄 [0.1 — Symbolic AI, expert systems, and the "AI winters"](#01-symbolic-ai-expert-systems-and-the-ai-winters)
+  * 📄 [0.2 — The shift to deep learning: perceptron, multi-layer networks](#02-the-shift-to-deep-learning-perceptron-multi-layer-networks)
+  * 📄 [0.3 — RNN (Recurrent Neural Networks) — processing sequences](#03-rnn-recurrent-neural-networks-processing-sequences)
+  * 📄 [0.4 — LSTM (1997) — the vanishing/exploding gradient problem](#04-lstm-1997-the-vanishingexploding-gradient-problem)
+  * 📄 [0.5 — AlexNet (2012) and the ImageNet Challenge — the "big bang" of modern deep learning](#05-alexnet-2012-and-the-imagenet-challenge-the-big-bang-of-modern-deep-learning)
+  * 📄 [0.6 — Embeddings: Word2Vec and GloVe — meaning as a mathematical vector](#06-embeddings-word2vec-and-glove-meaning-as-a-mathematical-vector)
+  * 📄 [0.7 — Seq2seq with attention (Bahdanau, 2014) — the conceptual seed of the Transformer](#07-seq2seq-with-attention-bahdanau-2014-the-conceptual-seed-of-the-transformer)
+  * 📄 [0.8 — Why RNNs/LSTMs held back scaling — the bottleneck of sequentiality](#08-why-rnnslstms-held-back-scaling-the-bottleneck-of-sequentiality)
+### 📁 [Module 1 — The Transformer Architecture and Attention Mechanisms (2017–2019)](#module-1-the-transformer-architecture-and-attention-mechanisms-20172019)
+  * 📄 [1.1 — "Attention Is All You Need" (2017) — the exact problem it solved](#11-attention-is-all-you-need-2017-the-exact-problem-it-solved)
+  * 📄 [1.2 — Self-attention — Query, Key, Value](#12-self-attention-query-key-value)
+  * 📄 [1.3 — Multi-head attention — why "multiple heads"](#13-multi-head-attention-why-multiple-heads)
+  * 📄 [1.4 — Positional encoding — how the model knows the order without recurrence](#14-positional-encoding-how-the-model-knows-the-order-without-recurrence)
+  * 📄 [1.5 — Complete architecture: attention blocks, feed-forward, normalization, residuals](#15-complete-architecture-attention-blocks-feed-forward-normalization-residuals)
+  * 📄 [1.6 — Three philosophies: Encoder-only (BERT), Decoder-only (GPT), Encoder-Decoder (T5)](#16-three-philosophies-encoder-only-bert-decoder-only-gpt-encoder-decoder-t5)
+  * 📄 [1.7 — Tokenization: BPE, WordPiece, SentencePiece](#17-tokenization-bpe-wordpiece-sentencepiece)
+  * 📄 [1.8 — What exactly is a "token" — why "strawberry" confuses models](#18-what-exactly-is-a-token-why-strawberry-confuses-models)
+### 📁 [Module 2 — Scale, Distributed Training, and the GPT Era (2019–2022)](#module-2-scale-distributed-training-and-the-gpt-era-20192022)
+  * 📄 [2.1 — GPT-1 and GPT-2 — predicting the next word generalizes](#21-gpt-1-and-gpt-2-predicting-the-next-word-generalizes)
+  * 📄 [2.2 — GPT-3 (2020) — the scale jump and "emergent" capabilities](#22-gpt-3-2020-the-scale-jump-and-emergent-capabilities)
+  * 📄 [2.3 — Scaling laws — Kaplan (2020) e Chinchilla (2022)](#23-scaling-laws-kaplan-2020-e-chinchilla-2022)
+  * 📄 [2.4 — Training data — Common Crawl, deduplication, synthetic data](#24-training-data-common-crawl-deduplication-synthetic-data)
+  * 📄 [2.5 — Training compute vs inference compute](#25-training-compute-vs-inference-compute)
+  * 📄 [2.6 — FLOPs, parameters, and the real cost of training](#26-flops-parameters-and-the-real-cost-of-training)
+  * 📄 [2.7 — Mixture-of-Experts (MoE) — routing, experts, scaling without skyrocketing costs](#27-mixture-of-experts-moe-routing-experts-scaling-without-skyrocketing-costs)
+  * 📄 [2.8 — In-context learning e few-shot prompting](#28-in-context-learning-e-few-shot-prompting)
+  * 📄 [2.9 — InstructGPT (2022) — from text completion to following instructions](#29-instructgpt-2022-from-text-completion-to-following-instructions)
+  * 📄 [2.10 — RLHF — the mechanics of initial alignment](#210-rlhf-the-mechanics-of-initial-alignment)
+  * 📄 [2.11 — Why a giant model does not fit on a single GPU — the physical baseline problem](#211-why-a-giant-model-does-not-fit-on-a-single-gpu-the-physical-baseline-problem)
+  * 📄 [2.12 — Data parallelism — copy the model, split the data](#212-data-parallelism-copy-the-model-split-the-data)
+  * 📄 [2.13 — Model parallelism — split the model itself](#213-model-parallelism-split-the-model-itself)
+  * 📄 [2.14 — Pipeline parallelism — split the model into "layers"](#214-pipeline-parallelism-split-the-model-into-layers)
+  * 📄 [2.15 — ZeRO / DeepSpeed — reducing memory redundancy](#215-zero-deepspeed-reducing-memory-redundancy)
+  * 📄 [2.16 — GPU communication — the interconnect as the new bottleneck](#216-gpu-communication-the-interconnect-as-the-new-bottleneck)
+  * 📄 [2.17 — Checkpointing and fault tolerance in long training](#217-checkpointing-and-fault-tolerance-in-long-training)
+### 📁 [Module 3 — Context, Memory, and Attention Windows](#module-3-context-memory-and-attention-windows)
+  * 📄 [3.1 — Why the context window is limited — quadratic cost O(n²)](#31-why-the-context-window-is-limited-quadratic-cost-on²)
+  * 📄 [3.2 — FlashAttention — optimizing without changing the mathematical output](#32-flashattention-optimizing-without-changing-the-mathematical-output)
+  * 📄 [3.3 — RoPE and ALiBi — solutions for context extrapolation](#33-rope-and-alibi-solutions-for-context-extrapolation)
+  * 📄 [3.4 — The long context race (2023–2026): from 4K to 1M+ tokens](#34-the-long-context-race-20232026-from-4k-to-1m-tokens)
+  * 📄 [3.5 — Long context in practice: "lost in the middle"](#35-long-context-in-practice-lost-in-the-middle)
+  * 📄 [3.6 — KV-cache — what it is, why it dominates cost/latency](#36-kv-cache-what-it-is-why-it-dominates-costlatency)
+  * 📄 [3.7 — Memory beyond context: persistent, summarization, hybrids](#37-memory-beyond-context-persistent-summarization-hybrids)
+### 📁 [Module 4 — Inference Optimization and Token Economics](#module-4-inference-optimization-and-token-economics)
+  * 📄 [4.1 — Input vs. output tokens — different pricing](#41-input-vs-output-tokens-different-pricing)
+  * 📄 [4.2 — Prompt caching — caching repeated prefixes (product-level, not technical KV-cache)](#42-prompt-caching-caching-repeated-prefixes-product-level-not-technical-kv-cache)
+  * 📄 [4.3 — Quantization: FP16, INT8, INT4](#43-quantization-fp16-int8-int4)
+  * 📄 [4.4 — GPTQ, AWQ, GGUF — methods and formats](#44-gptq-awq-gguf-methods-and-formats)
+  * 📄 [4.5 — Distillation — distilling a large model into a small one](#45-distillation-distilling-a-large-model-into-a-small-one)
+  * 📄 [4.6 — Continuous batching — serving many requests in parallel](#46-continuous-batching-serving-many-requests-in-parallel)
+  * 📄 [4.7 — Speculative decoding — small model "guesses" to speed up the large one](#47-speculative-decoding-small-model-guesses-to-speed-up-the-large-one)
+  * 📄 [4.8 — GPU vs. TPU — hardware architectures](#48-gpu-vs-tpu-hardware-architectures)
+  * 📄 [4.9 — VRAM as the real bottleneck](#49-vram-as-the-real-bottleneck)
+  * 📄 [4.10 — Streaming responses — why it appears word-by-word](#410-streaming-responses-why-it-appears-word-by-word)
+### 📁 [Module 5 — RAG, Embeddings, and External Knowledge](#module-5-rag-embeddings-and-external-knowledge)
+  * 📄 [5.1 — Why RAG exists — the limits of "frozen" knowledge](#51-why-rag-exists-the-limits-of-frozen-knowledge)
+  * 📄 [5.2 — Text embeddings — deep dive into Module 0.6](#52-text-embeddings-deep-dive-into-module-06)
+  * 📄 [5.3 — Vector databases — FAISS, Pinecone, pgvector, Weaviate](#53-vector-databases-faiss-pinecone-pgvector-weaviate)
+  * 📄 [5.4 — Vector similarity — cosine similarity, Euclidean distance](#54-vector-similarity-cosine-similarity-euclidean-distance)
+  * 📄 [5.5 — Chunking — how a document is split](#55-chunking-how-a-document-is-split)
+  * 📄 [5.6 — Re-ranking and hybrid search](#56-re-ranking-and-hybrid-search)
+  * 📄 [5.7 — Knowledge Graphs vs. vector databases — real trade-offs](#57-knowledge-graphs-vs-vector-databases-real-trade-offs)
+  * 📄 [5.8 — GraphRAG and hybrid approaches (2024–2026)](#58-graphrag-and-hybrid-approaches-20242026)
+  * 📄 [5.9 — Distributed Data Systems Foundations: Core principles of reliability, scalability, and maintainability in data-intensive applications](#59-distributed-data-systems-foundations-core-principles-of-reliability-scalability-and-maintainability-in-data-intensive-applications)
+  * 📄 [5.10 — Consistency & Replication: Understanding the CAP Theorem and choosing between ACID vs. BASE consistency models for distributed vector and relational data](#510-consistency-replication-understanding-the-cap-theorem-and-choosing-between-acid-vs-base-consistency-models-for-distributed-vector-and-relational-data)
+  * 📄 [5.11 — Change Data Capture (CDC) for Sync: Implementing log-based CDC to keep vector indices and caches perfectly synchronized with primary production databases without overwhelming them](#511-change-data-capture-cdc-for-sync-implementing-log-based-cdc-to-keep-vector-indices-and-caches-perfectly-synchronized-with-primary-production-databases-without-overwhelming-them)
+  * 📄 [5.12 — Data Lineage & Provenance: Establishing technical mechanisms to track the history of information from its raw source to the final agent response for auditing and reliability](#512-data-lineage-provenance-establishing-technical-mechanisms-to-track-the-history-of-information-from-its-raw-source-to-the-final-agent-response-for-auditing-and-reliability)
+  * 📄 [5.13 — Deterministic SQL Grounding: Implementing the "Autonomous Database Architect" pattern to shift from probabilistic semantic retrieval to precise SQL execution loops for numerical data](#513-deterministic-sql-grounding-implementing-the-autonomous-database-architect-pattern-to-shift-from-probabilistic-semantic-retrieval-to-precise-sql-execution-loops-for-numerical-data)
+  * 📄 [5.14 — Converged Databases for Sovereign AI: Utilizing single-engine architectures (e.g., Oracle 23ai or pgvector) to maintain vector and relational data within a single trust boundary, ensuring GDPR and EU AI Act compliance](#514-converged-databases-for-sovereign-ai-utilizing-single-engine-architectures-eg-oracle-23ai-or-pgvector-to-maintain-vector-and-relational-data-within-a-single-trust-boundary-ensuring-gdpr-and-eu-ai-act-compliance)
+### 📁 [Module 6 — Agents, Multi-Agent Systems, and Protocols](#module-6-agents-multi-agent-systems-and-protocols)
+  * 📄 [6.1 — From "chatbot" to "agent" — the conceptual difference](#61-from-chatbot-to-agent-the-conceptual-difference)
+  * 📄 [6.2 — Tool use / function calling](#62-tool-use-function-calling)
+  * 📄 [6.3 — ReAct (Reasoning + Acting) — the pattern behind most agents](#63-react-reasoning-acting-the-pattern-behind-most-agents)
+  * 📄 [6.4 — Structured outputs / constrained decoding — forcing valid JSON](#64-structured-outputs-constrained-decoding-forcing-valid-json)
+  * 📄 [6.5 — Multi-agent orchestration — LangGraph, "swarms"](#65-multi-agent-orchestration-langgraph-swarms)
+  * 📄 [6.6 — When multi-agent makes sense, and when it is unnecessary complexity](#66-when-multi-agent-makes-sense-and-when-it-is-unnecessary-complexity)
+  * 📄 [6.7 — MCP (Model Context Protocol) — what it solves](#67-mcp-model-context-protocol-what-it-solves)
+  * 📄 [6.8 — A2A and other communication protocols between agents](#68-a2a-and-other-communication-protocols-between-agents)
+  * 📄 [6.9 — Execution/sandboxing — how an agent runs code safely](#69-executionsandboxing-how-an-agent-runs-code-safely)
+  * 📄 [6.10 — Agentic AI in 2026 — hype vs. reality in production](#610-agentic-ai-in-2026-hype-vs-reality-in-production)
+  * 📄 [6.11 — Atomic Skill Design: Architecting modular, independent "Skills" that can be developed and tested in isolation before being dynamically orchestrated by a supervisor](#611-atomic-skill-design-architecting-modular-independent-skills-that-can-be-developed-and-tested-in-isolation-before-being-dynamically-orchestrated-by-a-supervisor)
+  * 📄 [6.12 — Agentic UX Design: Design principles for building trust, including communicating confidence scores, managing user expectations, and handling uncertainty through clarification requests](#612-agentic-ux-design-design-principles-for-building-trust-including-communicating-confidence-scores-managing-user-expectations-and-handling-uncertainty-through-clarification-requests)
+  * 📄 [6.13 — Advanced Orchestration Protocols: Deep dive into the Model Context Protocol (MCP) and Agent-to-Agent (A2A) integrations for standardized communication between heterogeneous agents and enterprise tools](#613-advanced-orchestration-protocols-deep-dive-into-the-model-context-protocol-mcp-and-agent-to-agent-a2a-integrations-for-standardized-communication-between-heterogeneous-agents-and-enterprise-tools)
+  * 📄 [6.14 — The "Autonomous Architect" Pattern: Designing agents capable of translating vague business intents into precise database schemas and deterministic SQL execution loops](#614-the-autonomous-architect-pattern-designing-agents-capable-of-translating-vague-business-intents-into-precise-database-schemas-and-deterministic-sql-execution-loops)
+  * 📄 [6.15 — Semantic Blueprints: Decoupling orchestration logic from code by storing structured behavioral JSON schemas (personas/skills) in vector databases for dynamic retrieval](#615-semantic-blueprints-decoupling-orchestration-logic-from-code-by-storing-structured-behavioral-json-schemas-personasskills-in-vector-databases-for-dynamic-retrieval)
+  * 📄 [6.16 — Human-in-the-loop (HITL) Gateways: Designing rigid graph boundaries where agents generate "recommendations" but require human approval for high-impact actions](#616-human-in-the-loop-hitl-gateways-designing-rigid-graph-boundaries-where-agents-generate-recommendations-but-require-human-approval-for-high-impact-actions)
+### 📁 [Module 7 — Fine-Tuning, Adaptation, and Alignment](#module-7-fine-tuning-adaptation-and-alignment)
+  * 📄 [7.1 — Full fine-tuning — retraining all weights](#71-full-fine-tuning-retraining-all-weights)
+  * 📄 [7.2 — PEFT — fine-tuning little, changing much](#72-peft-fine-tuning-little-changing-much)
+  * 📄 [7.3 — LoRA — the math, in simple terms](#73-lora-the-math-in-simple-terms)
+  * 📄 [7.4 — QLoRA — quantization + LoRA](#74-qlora-quantization-lora)
+  * 📄 [7.5 — RLHF vs. DPO — two paths to alignment](#75-rlhf-vs-dpo-two-paths-to-alignment)
+  * 📄 [7.6 — Newer alignment methods (2024–2026)](#76-newer-alignment-methods-20242026)
+  * 📄 [7.7 — When fine-tuning is the right answer, and when it is not](#77-when-fine-tuning-is-the-right-answer-and-when-it-is-not)
+### 📁 [Module 8 — MLOps, LLMOps, and Enterprise AI FinOps](#module-8-mlops-llmops-and-enterprise-ai-finops)
+  * 📄 [8.1 — Lifecycle of a model in production — versioning, monitoring, drift](#81-lifecycle-of-a-model-in-production-versioning-monitoring-drift)
+  * 📄 [8.2 — Serving frameworks — vLLM, TGI](#82-serving-frameworks-vllm-tgi)
+  * 📄 [8.3 — Latency vs. throughput](#83-latency-vs-throughput)
+  * 📄 [8.4 — AI FinOps — caching, model routing, model cascading](#84-ai-finops-caching-model-routing-model-cascading)
+  * 📄 [8.5 — Evaluation and benchmarking — how to measure if a model is good](#85-evaluation-and-benchmarking-how-to-measure-if-a-model-is-good)
+  * 📄 [8.6 — Benchmarks with proper names — MMLU, ARC-AGI, HumanEval, SWE-bench](#86-benchmarks-with-proper-names-mmlu-arc-agi-humaneval-swe-bench)
+  * 📄 [8.7 — Observability — tracing, logging, why "black box" doesn't work in production](#87-observability-tracing-logging-why-black-box-doesnt-work-in-production)
+  * 📄 [8.8 — SRE Mindset for AI: Applying engineering discipline to operate mission-critical AI systems, focusing on the "Four Golden Signals" (Latency, Traffic, Errors, Saturation)](#88-sre-mindset-for-ai-applying-engineering-discipline-to-operate-mission-critical-ai-systems-focusing-on-the-four-golden-signals-latency-traffic-errors-saturation)
+  * 📄 [8.9 — Incident Management & Observability: Conducting rigorous post-mortems, detecting silent failures like model/data drift, and implementing automated root cause analysis](#89-incident-management-observability-conducting-rigorous-post-mortems-detecting-silent-failures-like-modeldata-drift-and-implementing-automated-root-cause-analysis)
+  * 📄 [8.10 — Service-Level Objectives (SLOs): Defining and measuring reliability targets (SLOs/SLIs) specifically for probabilistic GenAI workloads](#810-service-level-objectives-slos-defining-and-measuring-reliability-targets-slosslis-specifically-for-probabilistic-genai-workloads)
+  * 📄 [8.11 — Chaos Engineering for AI: Testing system resilience by intentionally injecting faults, such as GPU memory exhaustion or API latency spikes, to ensure graceful degradation](#811-chaos-engineering-for-ai-testing-system-resilience-by-intentionally-injecting-faults-such-as-gpu-memory-exhaustion-or-api-latency-spikes-to-ensure-graceful-degradation)
+### 📁 [Module 9 — The State of the Art in August 2026](#module-9-the-state-of-the-art-in-august-2026)
+  * 📄 [9.1 — Frontier model landscape — main families](#91-frontier-model-landscape-main-families)
+  * 📄 [9.2 — Open-weight vs. proprietary — current state of the trade-off](#92-open-weight-vs-proprietary-current-state-of-the-trade-off)
+  * 📄 [9.3 — Reasoning models and "test-time compute"](#93-reasoning-models-and-test-time-compute)
+  * 📄 [9.4 — Multimodality — text, image, audio, video](#94-multimodality-text-image-audio-video)
+  * 📄 [9.5 — Governance, data sovereignty, and regulation](#95-governance-data-sovereignty-and-regulation)
+  * 📄 [9.6 — Where the industry is headed next](#96-where-the-industry-is-headed-next)
+### 📁 [Module 10 — Computer Vision and Image Generation](#module-10-computer-vision-and-image-generation)
+  * 📄 [10.1 — Why vision has a different family tree than text](#101-why-vision-has-a-different-family-tree-than-text)
+  * 📄 [10.2 — CNNs — convolution, pooling](#102-cnns-convolution-pooling)
+  * 📄 [10.3 — ImageNet: AlexNet → VGG → ResNet (2015) — skip connections](#103-imagenet-alexnet-vgg-resnet-2015-skip-connections)
+  * 📄 [10.4 — Vision Transformers (ViT, 2020)](#104-vision-transformers-vit-2020)
+  * 📄 [10.5 — Multimodal models (CLIP, 2021)](#105-multimodal-models-clip-2021)
+  * 📄 [10.6 — GANs — the first generation of generative image](#106-gans-the-first-generation-of-generative-image)
+  * 📄 [10.7 — Diffusion models — learning to "denoise"](#107-diffusion-models-learning-to-denoise)
+  * 📄 [10.8 — DALL-E, Stable Diffusion, Midjourney — differences in approach](#108-dall-e-stable-diffusion-midjourney-differences-in-approach)
+  * 📄 [10.9 — Text-to-image in practice: conditioning, ControlNet](#109-text-to-image-in-practice-conditioning-controlnet)
+  * 📄 [10.10 — Audio and voice: Whisper, TTS, voice cloning](#1010-audio-and-voice-whisper-tts-voice-cloning)
+  * 📄 [10.11 — Generative video (Sora and equivalents, 2024–2026)](#1011-generative-video-sora-and-equivalents-20242026)
+  * 📄 [10.12 — State of the art in 2026: current limits](#1012-state-of-the-art-in-2026-current-limits)
+### 📁 [Module 11 — Safety, Interpretability, and Classical RL](#module-11-safety-interpretability-and-classical-rl)
+  * 📄 [11.1 — "Pure" Reinforcement Learning as its own field](#111-pure-reinforcement-learning-as-its-own-field)
+  * 📄 [11.2 — Q-learning and foundations of classical RL](#112-q-learning-and-foundations-of-classical-rl)
+  * 📄 [11.3 — AlphaGo (2016) and AlphaZero](#113-alphago-2016-and-alphazero)
+  * 📄 [11.4 — How classical RL links to RLHF in Module 2](#114-how-classical-rl-links-to-rlhf-in-module-2)
+  * 📄 [11.5 — Prompt injection — the "SQL injection" of the LLM era](#115-prompt-injection-the-sql-injection-of-the-llm-era)
+  * 📄 [11.6 — Jailbreaking — techniques and why it is a structural problem](#116-jailbreaking-techniques-and-why-it-is-a-structural-problem)
+  * 📄 [11.7 — Adversarial attacks](#117-adversarial-attacks)
+  * 📄 [11.8 — Data poisoning](#118-data-poisoning)
+  * 📄 [11.9 — Mechanistic interpretability — "opening the black box"](#119-mechanistic-interpretability-opening-the-black-box)
+  * 📄 [11.10 — Features and circuits](#1110-features-and-circuits)
+  * 📄 [11.11 — Alignment as an open problem](#1111-alignment-as-an-open-problem)
+  * 📄 [11.12 — Safety in production: guardrails, red-teaming](#1112-safety-in-production-guardrails-red-teaming)
+  * 📄 [11.13 — Zero Trust AI Architectures: Moving security from the perimeter to the identity-based authorization of every individual agent-to-tool interaction](#1113-zero-trust-ai-architectures-moving-security-from-the-perimeter-to-the-identity-based-authorization-of-every-individual-agent-to-tool-interaction)
+  * 📄 [11.14 — Data Sovereignty & Privacy: Utilizing converged databases to keep vector search within the secure governance boundary, eliminating the risk of data leakage during ETL to external stores](#1114-data-sovereignty-privacy-utilizing-converged-databases-to-keep-vector-search-within-the-secure-governance-boundary-eliminating-the-risk-of-data-leakage-during-etl-to-external-stores)
+  * 📄 [11.16 — Forensic Auditability with Hash Chaining: Implementing SHA-256 cryptographic chaining to log every agent "thought" and action immutably for legal accountability](#1116-forensic-auditability-with-hash-chaining-implementing-sha-256-cryptographic-chaining-to-log-every-agent-thought-and-action-immutably-for-legal-accountability)
+  * 📄 [11.17 — Adversarial Red Teaming for Agents: Specialized stress-testing for autonomous loops to detect "Trojan attacks" and multi-step prompt injections](#1117-adversarial-red-teaming-for-agents-specialized-stress-testing-for-autonomous-loops-to-detect-trojan-attacks-and-multi-step-prompt-injections)
+### 📁 [Module 12 — Tool Ecosystem and Market (Current Landscape), expanded version](#module-12-tool-ecosystem-and-market-current-landscape-expanded-version)
+  * 📄 [12.1 — Agentic coding: Claude Code, Cursor, Devin, GitHub Copilot Workspace, Codex — what each proposes and how they differ](#121-agentic-coding-claude-code-cursor-devin-github-copilot-workspace-codex-what-each-proposes-and-how-they-differ)
+  * 📄 [12.2 — Orchestration frameworks: LangChain, LlamaIndex, CrewAI, AutoGen — comparison with LangGraph](#122-orchestration-frameworks-langchain-llamaindex-crewai-autogen-comparison-with-langgraph)
+  * 📄 [12.3 — Enterprise AI cloud platforms: AWS Bedrock, Google Vertex AI, Azure AI Foundry](#123-enterprise-ai-cloud-platforms-aws-bedrock-google-vertex-ai-azure-ai-foundry)
+  * 📄 [12.4 — Inference infrastructure: Specialized GPU clouds (Groq, Cerebras, Together, Fireworks, Baseten, Modal) and custom silicon](#124-inference-infrastructure-specialized-gpu-clouds-groq-cerebras-together-fireworks-baseten-modal-and-custom-silicon)
+  * 📄 [12.5 — Model routing gateways: OpenRouter, Vercel AI Gateway — the new intermediary layer](#125-model-routing-gateways-openrouter-vercel-ai-gateway-the-new-intermediary-layer)
+  * 📄 [12.6 — Categories of agents in the market: coding, workflow automation, vertical agents, browser agents, customer support, RPA](#126-categories-of-agents-in-the-market-coding-workflow-automation-vertical-agents-browser-agents-customer-support-rpa)
+  * 📄 [12.7 — No-code/low-code AI builders — what they are useful for, and where they stop before needing an architect](#127-no-codelow-code-ai-builders-what-they-are-useful-for-and-where-they-stop-before-needing-an-architect)
+  * 📄 [12.8 — Observability and evaluation ecosystem: LangSmith, Weights & Biases, Arize](#128-observability-and-evaluation-ecosystem-langsmith-weights-biases-arize)
+  * 📄 [12.9 — AI IDEs and programming extensions — Windsurf, Copilot, and the broader category](#129-ai-ides-and-programming-extensions-windsurf-copilot-and-the-broader-category)
+  * 📄 [12.10 — Protocol adoption as a market signal — MCP vs. A2A, who supports what](#1210-protocol-adoption-as-a-market-signal-mcp-vs-a2a-who-supports-what)
+  * 📄 [12.11 — Consolidation and bundling — why specialized tools are being absorbed by generalist assistants (case Sora/ChatGPT)](#1211-consolidation-and-bundling-why-specialized-tools-are-being-absorbed-by-generalist-assistants-case-sorachatgpt)
+  * 📄 [12.12 — Model provider landscape — who leads what in August 2026, and how fast that changes](#1212-model-provider-landscape-who-leads-what-in-august-2026-and-how-fast-that-changes)
+### 📁 [Module 13 — Advanced Architecture & Technical Leadership](#module-13-advanced-architecture-technical-leadership)
+  * 📄 [13.1 — Trade-off Analysis & ADRs: Systematic use of Architectural Decision Records (ADRs) to document the "Why" behind technological choices, focusing on consequences and alternatives](#131-trade-off-analysis-adrs-systematic-use-of-architectural-decision-records-adrs-to-document-the-why-behind-technological-choices-focusing-on-consequences-and-alternatives)
+  * 📄 [13.2 — Evolutionary Architecture: Designing systems that support constant change through "Fitness Functions"—automated assessments of architectural characteristics like modularity or reliability](#132-evolutionary-architecture-designing-systems-that-support-constant-change-through-fitness-functionsautomated-assessments-of-architectural-characteristics-like-modularity-or-reliability)
+  * 📄 [13.3 — FinOps & Cloud Cost Management: Implementing automated cost monitoring to optimize cloud spending and analyze ROI per-token in enterprise AI pipelines](#133-finops-cloud-cost-management-implementing-automated-cost-monitoring-to-optimize-cloud-spending-and-analyze-roi-per-token-in-enterprise-ai-pipelines)
+  * 📄 [13.4 — Mentorship & Multiplier Leadership: Shifting from being the sole decision-maker to mentoring engineering teams, raising the collective technical level, and navigating organizational politics](#134-mentorship-multiplier-leadership-shifting-from-being-the-sole-decision-maker-to-mentoring-engineering-teams-raising-the-collective-technical-level-and-navigating-organizational-politics)
+  * 📄 [13.5 — Legacy System Modernization: Strategies for injecting AI into complex pre-existing infrastructures (Strangler Pattern) and utilizing AIOps for self-healing legacy environments](#135-legacy-system-modernization-strategies-for-injecting-ai-into-complex-pre-existing-infrastructures-strangler-pattern-and-utilizing-aiops-for-self-healing-legacy-environments)
+  * 📄 [13.6 — Technical Leadership & RACI Alignment: Managing cross-functional expectations and responsibilities using the RACI Matrix specifically designed for probabilistic AI projects](#136-technical-leadership-raci-alignment-managing-cross-functional-expectations-and-responsibilities-using-the-raci-matrix-specifically-designed-for-probabilistic-ai-projects)
+  * 📄 [13.7 — Horizon 2026: Reasoning & Memory Scaling: Architecting systems to support Interactive Test-Time Scaling (long-term thinking) and State-Space Models (SSMs) for infinite cognitive memory](#137-horizon-2026-reasoning-memory-scaling-architecting-systems-to-support-interactive-test-time-scaling-long-term-thinking-and-state-space-models-ssms-for-infinite-cognitive-memory)
+  * 📄 [13.8 — Wardley Mapping for AI Strategy: Using mapping to decide whether to build a custom model (Genesis) or use an API (Commodity) based on the evolution of the tech landscape](#138-wardley-mapping-for-ai-strategy-using-mapping-to-decide-whether-to-build-a-custom-model-genesis-or-use-an-api-commodity-based-on-the-evolution-of-the-tech-landscape)
+  * 📄 [13.9 — Strangler Fig Pattern for AI Injection: Strategies for incrementally wrapping legacy systems with AI-powered microservices until the old infrastructure is replaced](#139-strangler-fig-pattern-for-ai-injection-strategies-for-incrementally-wrapping-legacy-systems-with-ai-powered-microservices-until-the-old-infrastructure-is-replaced)
+  * 📄 [13.10 — Architectural Fitness Functions: Automating governance by writing code that verifies architectural integrity (e.g., coupling levels, latency thresholds) in every CI/CD build](#1310-architectural-fitness-functions-automating-governance-by-writing-code-that-verifies-architectural-integrity-eg-coupling-levels-latency-thresholds-in-every-cicd-build)
+  * 📄 [13.11 — AI RACI Heatmaps: Managing cross-functional responsibilities between MLEs, Data Engineers, and Stakeholders using specialized matrix heatmaps](#1311-ai-raci-heatmaps-managing-cross-functional-responsibilities-between-mles-data-engineers-and-stakeholders-using-specialized-matrix-heatmaps)
+
+</details>
 
 ---
-
 
 ## Module 0.0 — Mathematical Foundations and Classical ML
 
@@ -1442,7 +1605,7 @@ graph LR
 
 **Practical example:**
 For a 70B parameter model serving a single user generating 4,000 tokens:
-- $\text{Cache size} = 2 \times \text{layers} \times \text{heads} \times d_k \times \text{sequence\_length} \times \text{bytes}$
+- $\text{Cache size} = 2 \times \text{layers} \times \text{heads} \times d_k \times \text{sequence length} \times \text{bytes}$
 - $\text{Cache size} = 2 \times 80 \times 64 \times 128 \times 4000 \times 2 \text{ bytes} \approx 13.1 \text{ GB}$ per single user.
 If 100 users are requesting responses simultaneously, the KV-cache alone requires over 1.3 Terabytes of VRAM, bounding serving capacity.
 
@@ -1917,7 +2080,7 @@ When chunking code:
 
 **How it works:**
 - **Hybrid Search:** Combines **lexical search** (BM25, matching exact keywords) and **semantic vector search** (retrieving by conceptual embeddings). The two result sets are combined using **Reciprocal Rank Fusion (RRF)**:
-$$\text{RRF\_Score}(d) = \sum_{m \in M} \frac{1}{k + r_m(d)}$$
+$$\text{RRF Score}(d) = \sum_{m \in M} \frac{1}{k + r_m(d)}$$
 - **Re-ranking:** Semantic vector models (bi-encoders) are fast but lose detailed relational nuances between queries and documents. A **Cross-Encoder** (re-ranker) is placed after retrieval. It takes the top $K$ retrieved documents and processes them along with the query simultaneously in a heavy, joint self-attention pass, generating highly precise relevance scores to filter down the final context.
 
 **Diagram:**
